@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_teshruparelll_Tesh_1723128025624-push-trigger-input-set
+  identifier: Build_teshruparelll_Tesh_1723128025624pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: TeshApp
+  pipeline:
+    identifier: Build_teshruparelll_Tesh_1723128025624
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
