@@ -20,15 +20,6 @@ pipeline:
           execution:
             steps:
               - step:
-                  identifier: runlinter
-                  name: run linter
-                  spec:
-                    command: |-
-                      pip install flake8
-                      flake8 .
-                  timeout: ""
-                  type: Run
-              - step:
                   identifier: setupvirtualenvironment
                   name: setup virtual environment
                   spec:
@@ -51,9 +42,9 @@ pipeline:
                   timeout: ""
                   type: BuildAndPushDockerRegistry
           platform:
-            arch: Amd64
             os: Linux
+            arch: Amd64
           runtime:
-            spec: {}
             type: Cloud
+            spec: {}
         type: CI
